@@ -83,8 +83,7 @@ a {
 
   .main_title .main_title_photo{
     display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
+    
   }
   
   .main_title .main_title_photo img{
@@ -133,6 +132,12 @@ a {
     height: 100px;
    
   }
+  .main_title .main_title_photo{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  
 
 
 
