@@ -2,18 +2,21 @@
   --text-color: #f0f4f5;
   --background-color: #263343;
   --accent-color: #5a6846;
+  --body--background-color:#ededed;
+  --grey-color:#bcbcbc;
 
   --v-small-size: 3px;
   --small-size:8px;
   --middle-size:15px;
   --big-size:23px;
-  
-
+  --v-big-size:30px;
+  --so-big-size:37px;
 }
 
 body{
   margin: 0;
   font-family: Source Sans Pro;
+  background-color: var(--body--background-color);
 }
 
 a {
@@ -21,6 +24,7 @@ a {
   text-decoration: none;
 }
 
+/*---------------navbar section---------------*/
 .navbar{
   background: #3d4b68;
   display: flex;
@@ -74,24 +78,74 @@ a {
   color: var(--accent-color);
 }
 
+/*-------------profile_section----------------*/
+.profile{
+  display:flex;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-bottom: 1px solid var(--grey-color);
+  padding-bottom: 7%;
+}
 
-  .main_title{
-    display:flex;
-    list-style:none;
+.profile_title li{
+  display:flex;
+  list-style:none;
+  flex-direction: column;
+}
+
+.profile_title .profile_title_photo{
+  display:flex;
+  padding-left: 100px;
+} 
+.profile_title .profile_title_photo img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  outline: 2px solid var(--background-color);
+}
+
+.profile_subtitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 3%; 
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+}
+
+.profile_subtitle .profile_subtitle_intro{
+ padding-top: 20px;
+}
+
+.profile_subtitle .profile_subtitle_intro div{
+  font-size: var(--middle-size); 
+  padding-top: 10px; 
   
-  }
+}
+.profile_subtitle .profile_subtitle_intro div i{
+ padding-right: 10px;
+}
 
-  .main_title .main_title_photo{
-    display:flex;
-    
-  }
-  
-  .main_title .main_title_photo img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
+.profile_subtitle .profile_subtitle_id{
+  font-size:var(--v-big-size);
+  font-weight: bold;
+  justify-content: center;
+}
+.profile_subtitle .profile_subtitle_id i{
+  padding-right: 10px;
+]
 
+/*--------title_menu section-------------*/
+.title_menu .title_menu_button{
+ 
+ 
+}
+
+
+/*---------------media section---------------*/
 @media screen and (max-width: 768px){
   .navbar{
     flex-direction: column;
@@ -127,17 +181,15 @@ a {
   }
 
   
-  .main_title .main_title_photo img{
+  .profile_title .profile_title_photo img{
     width: 100px;
     height: 100px;
    
   }
-  .main_title .main_title_photo{
+  .profile_title .profile_title_photo{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
   }
   
-
-
-
+}
