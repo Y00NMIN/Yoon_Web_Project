@@ -1,9 +1,11 @@
 :root{
   --text-color: #f0f4f5;
   --background-color: #263343;
-  --accent-color: #5a6846;
+  --l-background-color: #4f5c6e;
+  --accent-color: #9ea56d;
   --body--background-color:#ededed;
   --grey-color:#bcbcbc;
+  --d-grey-color:#757575;
 
   --v-small-size: 3px;
   --small-size:8px;
@@ -24,6 +26,12 @@ a {
   text-decoration: none;
 }
 
+section{
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
 /*---------------navbar section---------------*/
 .navbar{
   background: #3d4b68;
@@ -38,10 +46,16 @@ a {
   color: var(--text-color);
 }
 
+.navbar_logo a:hover{
+  color: var(--accent-color);
+}
+
 .navbar_logo i{
   color: var(--accent-color);
   padding-right: 5px;
 }
+
+
 
 .navbar_menu{
   display: flex;
@@ -60,9 +74,16 @@ a {
 
 .navbar_icons{
   list-style: none;
-  color:var(--text-color);
   display: flex;
   padding-left: 0;
+}
+
+.navbar_icons li a{
+  color: var(--accent-color);
+}
+
+.navbar_icons li a:hover{
+  color: var(--text-color);
 }
 
 .navbar_icons li{
@@ -82,10 +103,8 @@ a {
 .profile{
   display:flex;
   margin-top: 3%;
-  margin-left: 5%;
-  margin-right: 5%;
   border-bottom: 1px solid var(--grey-color);
-  padding-bottom: 7%;
+  padding-bottom: 5%;
 }
 
 .profile_title li{
@@ -123,8 +142,9 @@ a {
 .profile_subtitle .profile_subtitle_intro div{
   font-size: var(--middle-size); 
   padding-top: 10px; 
-  
+  color: var(--l-background-color);
 }
+
 .profile_subtitle .profile_subtitle_intro div i{
  padding-right: 10px;
 }
@@ -133,15 +153,70 @@ a {
   font-size:var(--v-big-size);
   font-weight: bold;
   justify-content: center;
+  color: var(--background-color);
 }
+
 .profile_subtitle .profile_subtitle_id i{
   padding-right: 10px;
-]
+}
 
 /*--------title_menu section-------------*/
 .title_menu .title_menu_button{
- 
- 
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  border-bottom: 1px solid var(--grey-color);
+  padding-bottom: 2%;
+}
+
+.title_menu .title_menu_button .title_menu_project{
+  margin-left: 15%;
+  margin-right: 15%;
+  font-weight: bold;
+}
+
+.title_menu .title_menu_button .title_menu_project button i{
+  padding-right: 10px;
+}
+
+
+.title_menu .title_menu_button .title_menu_project button{
+  border:0;
+  outline:0;
+  font-size: var(--big-size);
+  color: var(--l-background-color);
+
+}
+
+.title_menu .title_menu_button .title_menu_project button:hover{
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  color: var(--text-color);
+}
+
+
+.title_menu .title_menu_button .title_menu_code{
+  margin-left: 15%;
+  margin-right: 15%;
+  font-weight: bold;
+}
+
+.title_menu .title_menu_button .title_menu_code button i{
+  padding-right: 10px;
+}
+
+
+.title_menu .title_menu_button .title_menu_code button{
+  border:0;
+  outline:0;
+  font-size: var(--big-size);
+  color: var(--l-background-color);
+}
+
+.title_menu .title_menu_button .title_menu_code button:hover{
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  color: var(--text-color);
 }
 
 
@@ -180,16 +255,63 @@ a {
     display: flex;
   }
 
-  
-  .profile_title .profile_title_photo img{
-    width: 100px;
-    height: 100px;
-   
+  .profile{
+    margin-top: 0;
+    padding-bottom:7px;
+    padding-top:1px;
   }
+  .profile .profile_title{
+    margin-top: 2px;
+  }
+
+  .profile .profile_subtitle{
+    margin-top: 2px;
+  }
+
+  .profile
+
+  .profile_title .profile_title_photo img{
+    width: 120px;
+    height: 120px;
+  }
+
   .profile_title .profile_title_photo{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
+    padding-left: 5px;
+    padding-top: 20%;
+  }
+
+  .profile_subtitle .profile_subtitle_intro div{
+    font-size: 12px;
+  }
+
+  .profile_subtitle .profile_subtitle_id{
+    font-size:var(--middle-size);
+    padding-top: 3px;  
+  }
+
+  .profile_subtitle .profile_subtitle_intro{
+    padding-top: 1px; 
+  }
+
+  .title_menu .title_menu_button .title_menu_code{
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+
+  .title_menu .title_menu_button .title_menu_code button{
+    font-size: var(--middle-size);
+  }
+
+  .title_menu .title_menu_button .title_menu_project{
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+
+  .title_menu .title_menu_button .title_menu_project button{
+    font-size: var(--middle-size);
   }
   
 }
