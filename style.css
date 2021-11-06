@@ -238,7 +238,6 @@ section{
 .feed .youtube_web .youtube_web_title{
   opacity: 0;
   display: flex;
-  
   align-items: center;
   position: absolute;
 	top: 25%;
@@ -252,7 +251,6 @@ section{
 .feed .youtube_web .youtube_web_subtitle{
   opacity: 0;
   display: flex;
-  
   align-items: center;
   position: absolute;
 	top: 50%;
@@ -367,5 +365,27 @@ section{
   .title_menu .title_menu_button .title_menu_project button{
     font-size: var(--middle-size);
   }
+
+  .feed .youtube_web{
+    width: 150px;
+    height: 150px;
+  }
+  
+  .feed .youtube_web img{
+    width: 150px;
+    height: 150px;
+  }
+  .feed .youtube_web:hover{
+    height: 180px;
+  }
+  .feed .youtube_web .youtube_web_title{
+    font-size: var(--middle-size);
+  }
+  .feed .youtube_web .youtube_web_subtitle{
+    font-size: 10px;
+    padding-top: 30%;
+  }
+  
+  
   
 }
