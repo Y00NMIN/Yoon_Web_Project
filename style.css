@@ -221,16 +221,18 @@ section{
 
 /*---------------feed section----------------*/
 .feed .youtube_web{
-  width: 320px;
-  height: 320px;
-  position: relative;
-}
-
-.feed .youtube_web:hover{
   width: 300px;
   height: 300px;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid var(--background-color);
+}
+
+
+.feed .youtube_web:hover{
+  height: 340px;
   background-color : var(--l-background-color); 
-  transition : 3s;
+  transition : 2s;
 }
 
 .feed .youtube_web .youtube_web_title{
@@ -262,12 +264,12 @@ section{
 
 .feed .youtube_web:hover .youtube_web_title{
   color : var(--text-color); 
-  transition : 2s;
+  transition : 1s;
   opacity: 1;
 }
 .feed .youtube_web:hover .youtube_web_subtitle{
   color : var(--text-color); 
-  transition : 2s;
+  transition : 1s;
   opacity: 1;
 }
 
