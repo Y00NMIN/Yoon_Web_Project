@@ -16,11 +16,15 @@
   --so-big-size:37px;
 }
 
+html, body {
+  height: 100%;
+}
+
 body{
+  height: 100%;
   margin: 0;
   font-family: Source Sans Pro;
   background-color: var(--body--background-color);
-  width:100%;
 }
 
 a {
@@ -29,7 +33,6 @@ a {
 }
 
 section{
-  width:80%
   margin-left: 5%;
   margin-right: 5%;
 
@@ -37,7 +40,6 @@ section{
 
 /*---------------navbar section---------------*/
 .navbar{
-  width:100%;
   background:var(--navbar-color);
   display: flex;
   align-items: center;
@@ -289,16 +291,21 @@ section{
 
 /*--------------footer section------------*/
 footer{
-  height:80px;
-  width:100%;
-  color: var(--text-color);
-  display:flex;
-  align-items: center;
-  justify-content: flex-end;
+  position: inherit;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:60px;
   background:var(--navbar-color);
-  margin-bottom:0;
+  padding-bottom: auto;
+  margin-bottom: auto;
+}
+
+footer .footer_email{
+  display: flex;
+  justify-content: flex-end;
+  color: var(--text-color);
   padding-right: 20px;
- 
 }
 
 /*---------------media section---------------*/
@@ -427,6 +434,10 @@ footer{
   .feed .youtube_web .youtube_web_subtitle{
     font-size: 10px;
     padding-top: 30%;
+  }
+
+  footer{
+    position: absolute;
   }
   
   
