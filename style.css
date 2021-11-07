@@ -19,6 +19,7 @@ body{
   margin: 0;
   font-family: Source Sans Pro;
   background-color: var(--body--background-color);
+  margin-bottom:10%;
 }
 
 a {
@@ -165,18 +166,18 @@ section{
   display: flex;
   list-style: none;
   justify-content: center;
-  border-bottom: 1px solid var(--grey-color);
   padding-bottom: 2%;
 }
 
 .title_menu .title_menu_button .title_menu_project{
   margin-left: 15%;
-  margin-right: 15%;
+  margin-right: 7%;
   font-weight: bold;
 }
 
 .title_menu .title_menu_button .title_menu_project button i{
   padding-right: 10px;
+  font-size: var(--middle-size);
 }
 
 
@@ -196,13 +197,14 @@ section{
 
 
 .title_menu .title_menu_button .title_menu_code{
-  margin-left: 15%;
+  margin-left: 7%;
   margin-right: 15%;
   font-weight: bold;
 }
 
 .title_menu .title_menu_button .title_menu_code button i{
   padding-right: 10px;
+  font-size:var(--middle-size);
 }
 
 
@@ -225,14 +227,19 @@ section{
   height: 300px;
   position: relative;
   border-radius: 4px;
-  border: 1px solid var(--background-color);
 }
 
+.feed .youtube_web img{
+  background-color: var(--text-color);
+}
+
+.feed .youtube_web img:hover{
+  background-color : var(--l-background-color); 
+}
 
 .feed .youtube_web:hover{
   height: 340px;
-  background-color : var(--l-background-color); 
-  transition : 2s;
+  transition : 3s;
 }
 
 .feed .youtube_web .youtube_web_title{
@@ -351,10 +358,11 @@ section{
   .title_menu .title_menu_button .title_menu_code{
     margin-left: 5%;
     margin-right: 10%;
+    
   }
 
   .title_menu .title_menu_button .title_menu_code button{
-    font-size: var(--middle-size);
+    font-size: 12px;
   }
 
   .title_menu .title_menu_button .title_menu_project{
@@ -363,7 +371,7 @@ section{
   }
 
   .title_menu .title_menu_button .title_menu_project button{
-    font-size: var(--middle-size);
+    font-size: 12px;
   }
 
   .feed .youtube_web{
@@ -374,6 +382,10 @@ section{
   .feed .youtube_web img{
     width: 150px;
     height: 150px;
+  }
+
+  .feed .youtube_web img:hover{
+    background-color:var(--l-background-color);
   }
   .feed .youtube_web:hover{
     height: 180px;
