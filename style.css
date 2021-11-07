@@ -19,7 +19,7 @@ body{
   margin: 0;
   font-family: Source Sans Pro;
   background-color: var(--body--background-color);
-  margin-bottom:10%;
+  
 }
 
 a {
@@ -279,6 +279,14 @@ section{
 }
 
 
+
+/*--------------footer section------------*/
+.footer .footer_intro{
+  background-color:var(--background-color);
+  margin-bottom:0;
+ 
+}
+
 /*---------------media section---------------*/
 @media screen and (max-width: 768px){
   .navbar{
@@ -355,6 +363,11 @@ section{
     padding-top: 1px; 
   }
 
+  .title_menu .title_menu_button {
+    margin-top: 2%;
+    margin-bottom: 1%;
+  }
+
   .title_menu .title_menu_button .title_menu_code{
     margin-left: 5%;
     margin-right: 10%;
@@ -363,6 +376,8 @@ section{
 
   .title_menu .title_menu_button .title_menu_code button{
     font-size: 12px;
+    padding-top: 3%;
+    padding-bottom: 1%;
   }
 
   .title_menu .title_menu_button .title_menu_project{
@@ -372,6 +387,8 @@ section{
 
   .title_menu .title_menu_button .title_menu_project button{
     font-size: 12px;
+    padding-top: 3%;
+    padding-bottom: 1%;
   }
 
   .feed .youtube_web{
