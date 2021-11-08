@@ -355,6 +355,7 @@ footer .footer_email{
 
 /*---------------media section---------------*/
 @media screen and (max-width: 768px){
+  /*------------------------navbar-----------------------*/
   .navbar{
     flex-direction: column;
     align-items: flex-start;
@@ -387,7 +388,7 @@ footer .footer_email{
   .navbar_icons.active{
     display: flex;
   }
-
+  /*--------------------------profile-------------------------*/
   .profile{
     margin-top: 0;
     padding-bottom:7px;
@@ -428,7 +429,7 @@ footer .footer_email{
   .profile_subtitle .profile_subtitle_intro{
     padding-top: 1px; 
   }
-
+  /*-------------------------title_menu----------------------*/
   .title_menu .title_menu_button {
     margin-top: 2%;
     margin-bottom: 1%;
@@ -456,7 +457,7 @@ footer .footer_email{
     padding-top: 3%;
     padding-bottom: 1%;
   }
-
+  /*--------------------------feed-------------------------*/
   .feed .youtube_web{
     width: 150px;
     height: 150px;
@@ -491,7 +492,7 @@ footer .footer_email{
   .feed .youtube_web .youtube_web_subtitle{
     display: none;
     }
-
+  /*-----------------------footer-------------------------*/
   footer{
     position:relative;
   }
