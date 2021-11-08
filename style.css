@@ -435,9 +435,22 @@ footer .footer_email{
     margin-bottom: 1%;
   }
 
+  .title_menu .title_menu_button .title_menu_about{
+    margin-left: 5%;
+    margin-right: 5%;
+    
+  }
+
+  .title_menu .title_menu_button .title_menu_about button{
+    font-size: 12px;
+    padding-top: 3%;
+    padding-bottom: 1%;
+  }
+
+
   .title_menu .title_menu_button .title_menu_skill{
     margin-left: 5%;
-    margin-right: 10%;
+    margin-right: 5%;
     
   }
 
@@ -448,7 +461,7 @@ footer .footer_email{
   }
 
   .title_menu .title_menu_button .title_menu_project{
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: 5%;
   }
 
