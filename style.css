@@ -18,6 +18,7 @@
 
 html, body {
   height: 100%;
+  width: 100%;
 }
 
 body{
@@ -437,7 +438,7 @@ footer .footer_email{
   }
 
   footer{
-    position: absolute;
+    position:relative;
   }
   
   
