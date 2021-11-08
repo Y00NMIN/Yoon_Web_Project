@@ -342,8 +342,6 @@ footer{
   width: 100%;
   height:60px;
   background:var(--navbar-color);
-  padding-bottom: auto;
-  margin-bottom: auto;
 }
 
 footer .footer_email{
@@ -488,14 +486,16 @@ footer .footer_email{
     height: 180px;
   }
   .feed .youtube_web .youtube_web_title{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: var(--middle-size);
+    
   }
   .feed .youtube_web .youtube_web_title:hover{
     width: 100%;
+    border-bottom: 0;
   }
   
   .feed .youtube_web .youtube_web_title:hover img{
@@ -506,9 +506,8 @@ footer .footer_email{
     display: none;
     }
   /*-----------------------footer-------------------------*/
-  footer{
-    position:relative;
-  }
+ 
+  
   
   
   
