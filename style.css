@@ -62,8 +62,6 @@ section{
   padding-right: 5px;
 }
 
-
-
 .navbar_menu{
   display: flex;
   list-style: none;
@@ -175,14 +173,41 @@ section{
   padding-bottom: 2%;
 }
 
+.title_menu .title_menu_button .title_menu_about{
+  margin-left: 10%;
+  margin-right: 7%;
+  font-weight: bold;
+}
+
+.title_menu .title_menu_button .title_menu_about button i{
+  padding-right: 8px;
+  font-size: 18px;
+}
+
+
+.title_menu .title_menu_button .title_menu_about button{
+  border:0;
+  outline:0;
+  font-size: var(--big-size);
+  color: var(--l-background-color);
+
+}
+
+.title_menu .title_menu_button .title_menu_about button:hover{
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  color: var(--text-color);
+}
+
+
 .title_menu .title_menu_button .title_menu_project{
-  margin-left: 15%;
+  margin-left: 7%;
   margin-right: 7%;
   font-weight: bold;
 }
 
 .title_menu .title_menu_button .title_menu_project button i{
-  padding-right: 10px;
+  padding-right: 8px;
   font-size: var(--middle-size);
 }
 
@@ -202,26 +227,26 @@ section{
 }
 
 
-.title_menu .title_menu_button .title_menu_code{
+.title_menu .title_menu_button .title_menu_skill{
   margin-left: 7%;
-  margin-right: 15%;
+  margin-right: 10%;
   font-weight: bold;
 }
 
-.title_menu .title_menu_button .title_menu_code button i{
-  padding-right: 10px;
-  font-size:var(--middle-size);
+.title_menu .title_menu_button .title_menu_skill button i{
+  padding-right: 8px;
+  font-size:18px;
 }
 
 
-.title_menu .title_menu_button .title_menu_code button{
+.title_menu .title_menu_button .title_menu_skill button{
   border:0;
   outline:0;
   font-size: var(--big-size);
   color: var(--l-background-color);
 }
 
-.title_menu .title_menu_button .title_menu_code button:hover{
+.title_menu .title_menu_button .title_menu_skill button:hover{
   background-color: var(--accent-color);
   border-radius: 4px;
   color: var(--text-color);
@@ -276,19 +301,38 @@ section{
   font-size: var(--middle-size);
 }
 
-
 .feed .youtube_web:hover .youtube_web_title{
   color : var(--text-color); 
   transition : 1s;
-  opacity: 1;
+  opacity: 0.9;
 }
+
+.feed .youtube_web .youtube_web_title:hover {
+  display: flex;
+  justify-content: center;
+  background-color: var(--l-background-color);
+  height: 20%;
+  width: 80%;
+  border-radius: 20px;
+  border-bottom: 1px solid var(--l-background-color);
+  opacity: 0.9;
+}
+
 .feed .youtube_web:hover .youtube_web_subtitle{
   color : var(--text-color); 
   transition : 1s;
   opacity: 1;
 }
 
-
+.feed .youtube_web .youtube_web_subtitle:hover {
+  display: flex;
+  justify-content: center;
+  background-color: var(--l-background-color);
+  width: 80%;
+  height: 30%;
+  border-radius: 20px;
+  opacity: 0.9;
+}
 
 /*--------------footer section------------*/
 footer{
@@ -390,13 +434,13 @@ footer .footer_email{
     margin-bottom: 1%;
   }
 
-  .title_menu .title_menu_button .title_menu_code{
+  .title_menu .title_menu_button .title_menu_skill{
     margin-left: 5%;
     margin-right: 10%;
     
   }
 
-  .title_menu .title_menu_button .title_menu_code button{
+  .title_menu .title_menu_button .title_menu_skill button{
     font-size: 12px;
     padding-top: 3%;
     padding-bottom: 1%;
@@ -430,12 +474,23 @@ footer .footer_email{
     height: 180px;
   }
   .feed .youtube_web .youtube_web_title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: var(--middle-size);
   }
-  .feed .youtube_web .youtube_web_subtitle{
-    font-size: 10px;
-    padding-top: 30%;
+  .feed .youtube_web .youtube_web_title:hover{
+    width: 100%;
   }
+  
+  .feed .youtube_web .youtube_web_title:hover img{
+    background-color: var(--l-background-color);
+  
+  }
+  .feed .youtube_web .youtube_web_subtitle{
+    display: none;
+    }
 
   footer{
     position:relative;
