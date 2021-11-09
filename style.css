@@ -362,7 +362,7 @@ footer .footer_contact_address .footer_email{
   display: flex;
   align-items: center;
   width: 20%;
-  height: 40%;
+  height: 50%;
   justify-content: center;
 }
 footer .footer_contact_address .footer_email i{
@@ -372,9 +372,9 @@ footer .footer_contact_address .footer_email i{
 footer .footer_contact_address .footer_email:hover{
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
-  border-radius: 10%;
+  border-radius: 100%;
   height: 70%;
-  transition : 2s;
+  transition : 1s;
 }
 
 footer .footer_contact_address .footer_github{
@@ -384,7 +384,7 @@ footer .footer_contact_address .footer_github{
   display: flex;
   align-items: center;
   width: 20%;
-  height: 40%;
+  height: 50%;
 }
 footer .footer_contact_address .footer_github i{
   padding-right: 10px;
@@ -393,9 +393,9 @@ footer .footer_contact_address .footer_github i{
 footer .footer_contact_address .footer_github:hover{
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
-  border-radius: 10%;
+  border-radius: 100%;
   height: 70%;
-  transition : 2s;
+  transition : 1s;
 }
 
 footer .footer_contact_address .footer_blog{
@@ -405,7 +405,7 @@ footer .footer_contact_address .footer_blog{
   display: flex;
   align-items: center;
   width: 20%;
-  height: 40%;
+  height: 50%;
 }
 footer .footer_contact_address .footer_blog i{
   padding-right: 10px;
@@ -414,9 +414,9 @@ footer .footer_contact_address .footer_blog i{
 footer .footer_contact_address .footer_blog:hover{
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
-  border-radius: 10%;
+  border-radius: 100%;
   height: 70%;
-  transition : 2s;
+  transition : 1s;
 }
 
 
@@ -575,7 +575,30 @@ footer .footer_contact_address .footer_blog:hover{
     display: none;
     }
   /*-----------------------footer-------------------------*/
- 
+
+  footer .footer_contact_address .footer_email{
+    font-size: var(--middle-size);
+    width: 30%;
+  }
+  footer .footer_contact_address .footer_email:hover{
+    height: 50%;
+  }
+
+  footer .footer_contact_address .footer_github{
+    font-size: var(--middle-size);
+    width: 30%;
+  }
+   footer .footer_contact_address .footer_github:hover{
+    height: 50%;
+  }
+
+  footer .footer_contact_address .footer_blog{
+    font-size: var(--middle-size);
+    width: 30%;
+  }
+   footer .footer_contact_address .footer_blog:hover{
+    height: 50%;
+  }
   
   
   
