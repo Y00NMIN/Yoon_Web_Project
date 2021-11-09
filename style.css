@@ -269,12 +269,14 @@ section{
 }
 
 .feed .youtube_web img:hover{
+  transition : 3s;
   background-color : var(--l-background-color); 
 }
 
 .feed .youtube_web:hover{
   height: 340px;
   transition : 3s;
+  background-color : var(--l-background-color); 
 }
 
 .feed .youtube_web .youtube_web_title{
@@ -550,6 +552,7 @@ footer .footer_contact_address .footer_blog:hover{
 
   .feed .youtube_web img:hover{
     background-color:var(--l-background-color);
+    transition: 3s;
   }
   .feed .youtube_web:hover{
     height: 180px;
