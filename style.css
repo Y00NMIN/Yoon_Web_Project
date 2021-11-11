@@ -264,11 +264,11 @@ section{
   border-radius: 4px;
 }
 
-.feed .youtube_web img{
+.feed .youtube_web .youtube_web_img{
   background-color: var(--text-color);
 }
 
-.feed .youtube_web img:hover{
+.feed .youtube_web .youtube_web_img:hover{
   transition : 3s;
   background-color : var(--l-background-color); 
 }
@@ -280,6 +280,7 @@ section{
 }
 
 .feed .youtube_web .youtube_web_title{
+  vertical-align: middle;
   opacity: 0;
   display: flex;
   align-items: center;
@@ -307,6 +308,16 @@ section{
   color : var(--text-color); 
   transition : 1s;
   opacity: 0.9;
+}
+
+.feed .youtube_web .youtube_web_word:hover{
+  display: table-cell;
+  vertical-align: middle;
+  background-color: var(--l-background-color);
+  border-radius: 20px;
+  border-bottom: 1px solid var(--l-background-color);
+  opacity: 0.9;
+
 }
 
 .feed .youtube_web .youtube_web_title:hover {
@@ -338,7 +349,7 @@ section{
 
 /*--------------footer section------------*/
 footer{
-  position: inherit;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
