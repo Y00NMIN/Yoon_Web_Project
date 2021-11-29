@@ -252,100 +252,6 @@ section{
   color: var(--text-color);
 }
 
-/*---------------feed section----------------*/
-.feed{
-  margin-bottom:10%;
-}
-
-.feed .youtube_web{
-  width: 300px;
-  height: 300px;
-  position: relative;
-  border-radius: 4px;
-}
-
-.feed .youtube_web .youtube_web_img{
-  background-color: var(--text-color);
-}
-
-.feed .youtube_web .youtube_web_img:hover{
-  transition : 3s;
-  background-color : var(--l-background-color); 
-}
-
-.feed .youtube_web:hover{
-  height: 340px;
-  transition : 3s;
-  background-color : var(--l-background-color); 
-}
-
-.feed .youtube_web .youtube_web_title{
-  vertical-align: middle;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  position: absolute;
-	top: 25%;
-	left: 50%;
-	transform: translate( -50%, -50% );
-  border-bottom: 1px solid var(--text-color);
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.feed .youtube_web .youtube_web_subtitle{
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate( -50%, -50% );
-  font-size: var(--middle-size);
-}
-
-.feed .youtube_web:hover .youtube_web_title{
-  color : var(--text-color); 
-  transition : 1s;
-  opacity: 0.9;
-}
-
-.feed .youtube_web .youtube_web_word:hover{
-  display: table-cell;
-  vertical-align: middle;
-  background-color: var(--l-background-color);
-  border-radius: 20px;
-  border-bottom: 1px solid var(--l-background-color);
-  opacity: 0.9;
-
-}
-
-.feed .youtube_web .youtube_web_title:hover {
-  display: flex;
-  justify-content: center;
-  background-color: var(--l-background-color);
-  height: 20%;
-  width: 80%;
-  border-radius: 20px;
-  border-bottom: 1px solid var(--l-background-color);
-  opacity: 0.9;
-}
-
-.feed .youtube_web:hover .youtube_web_subtitle{
-  color : var(--text-color); 
-  transition : 1s;
-  opacity: 1;
-}
-
-.feed .youtube_web .youtube_web_subtitle:hover {
-  display: flex;
-  justify-content: center;
-  background-color: var(--l-background-color);
-  width: 80%;
-  height: 30%;
-  border-radius: 20px;
-  opacity: 0.9;
-}
 
 /*--------------footer section------------*/
 footer{
@@ -550,44 +456,7 @@ footer .footer_contact_address .footer_blog:hover{
     padding-top: 3%;
     padding-bottom: 1%;
   }
-  /*--------------------------feed-------------------------*/
-  .feed .youtube_web{
-    width: 150px;
-    height: 150px;
-  }
   
-  .feed .youtube_web img{
-    width: 150px;
-    height: 150px;
-  }
-
-  .feed .youtube_web img:hover{
-    background-color:var(--l-background-color);
-    transition: 3s;
-  }
-  .feed .youtube_web:hover{
-    height: 180px;
-  }
-  .feed .youtube_web .youtube_web_title{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--middle-size);
-    
-  }
-  .feed .youtube_web .youtube_web_title:hover{
-    width: 100%;
-    border-bottom: 0;
-  }
-  
-  .feed .youtube_web .youtube_web_title:hover img{
-    background-color: var(--l-background-color);
-  
-  }
-  .feed .youtube_web .youtube_web_subtitle{
-    display: none;
-    }
   /*-----------------------footer-------------------------*/
 
   footer .footer_contact_address .footer_email{
