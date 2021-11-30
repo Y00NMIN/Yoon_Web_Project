@@ -1,0 +1,129 @@
+:root{
+  --navbar-color: #3d4b68;
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --l-background-color: #4f5c6e;
+  --accent-color: #9ea56d;
+  --body--background-color:#ededed;
+  --grey-color:#bcbcbc;
+  --d-grey-color:#757575;
+
+  --v-small-size: 3px;
+  --small-size:8px;
+  --middle-size:15px;
+  --big-size:23px;
+  --v-big-size:30px;
+  --so-big-size:37px;
+}
+
+/*--------------footer section------------*/
+footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height:30%;
+  background:var(--navbar-color);
+}
+footer h1{
+  color: var(--text-color);
+  text-align: center;
+}
+
+footer .footer_contact_address{
+  list-style: none;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+footer .footer_contact_address .footer_email{
+  font-size: var(--big-size);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 50%;
+  justify-content: center;
+}
+footer .footer_contact_address .footer_email i{
+  padding-right: 10px;
+  font-size: var(--v-big-size);
+}
+footer .footer_contact_address .footer_email:hover{
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  border-radius: 100%;
+  height: 70%;
+  transition : 1s;
+}
+
+footer .footer_contact_address .footer_github{
+  color: var(--text-color);
+  justify-content: center;
+  font-size: var(--big-size);
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 50%;
+}
+footer .footer_contact_address .footer_github i{
+  padding-right: 10px;
+  font-size: var(--v-big-size);
+}
+footer .footer_contact_address .footer_github:hover{
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  border-radius: 100%;
+  height: 70%;
+  transition : 1s;
+}
+
+footer .footer_contact_address .footer_blog{
+  font-size: var(--big-size);
+  color: var(--text-color);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 50%;
+}
+footer .footer_contact_address .footer_blog i{
+  padding-right: 10px;
+  font-size: var(--SO-big-size);
+}
+footer .footer_contact_address .footer_blog:hover{
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  border-radius: 100%;
+  height: 70%;
+  transition : 1s;
+}
+
+@media screen and (max-width: 768px){
+  footer .footer_contact_address .footer_email{
+    font-size: var(--middle-size);
+    width: 30%;
+  }
+  footer .footer_contact_address .footer_email:hover{
+    height: 50%;
+  }
+
+  footer .footer_contact_address .footer_github{
+    font-size: var(--middle-size);
+    width: 30%;
+  }
+   footer .footer_contact_address .footer_github:hover{
+    height: 50%;
+  }
+
+  footer .footer_contact_address .footer_blog{
+    font-size: var(--middle-size);
+    width: 30%;
+  }
+   footer .footer_contact_address .footer_blog:hover{
+    height: 50%;
+  }
+  
+}

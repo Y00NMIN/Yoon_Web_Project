@@ -112,6 +112,7 @@ section{
   padding-bottom: 5%;
 }
 
+
 .profile_title li{
   display:flex;
   list-style:none;
@@ -252,93 +253,6 @@ section{
   color: var(--text-color);
 }
 
-
-/*--------------footer section------------*/
-footer{
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height:30%;
-  background:var(--navbar-color);
-}
-footer h1{
-  color: var(--text-color);
-  text-align: center;
-}
-
-footer .footer_contact_address{
-  list-style: none;
-  top: 0;
-  display: flex;
-  justify-content: space-around;
-  height: 100%;
-}
-
-footer .footer_contact_address .footer_email{
-  font-size: var(--big-size);
-  color: var(--text-color);
-  display: flex;
-  align-items: center;
-  width: 20%;
-  height: 50%;
-  justify-content: center;
-}
-footer .footer_contact_address .footer_email i{
-  padding-right: 10px;
-  font-size: var(--v-big-size);
-}
-footer .footer_contact_address .footer_email:hover{
-  border: 1px solid var(--accent-color);
-  background-color: var(--accent-color);
-  border-radius: 100%;
-  height: 70%;
-  transition : 1s;
-}
-
-footer .footer_contact_address .footer_github{
-  color: var(--text-color);
-  justify-content: center;
-  font-size: var(--big-size);
-  display: flex;
-  align-items: center;
-  width: 20%;
-  height: 50%;
-}
-footer .footer_contact_address .footer_github i{
-  padding-right: 10px;
-  font-size: var(--v-big-size);
-}
-footer .footer_contact_address .footer_github:hover{
-  border: 1px solid var(--accent-color);
-  background-color: var(--accent-color);
-  border-radius: 100%;
-  height: 70%;
-  transition : 1s;
-}
-
-footer .footer_contact_address .footer_blog{
-  font-size: var(--big-size);
-  color: var(--text-color);
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  width: 20%;
-  height: 50%;
-}
-footer .footer_contact_address .footer_blog i{
-  padding-right: 10px;
-  font-size: var(--SO-big-size);
-}
-footer .footer_contact_address .footer_blog:hover{
-  border: 1px solid var(--accent-color);
-  background-color: var(--accent-color);
-  border-radius: 100%;
-  height: 70%;
-  transition : 1s;
-}
-
-
 /*---------------media section---------------*/
 @media screen and (max-width: 768px){
   /*------------------------navbar-----------------------*/
@@ -456,34 +370,5 @@ footer .footer_contact_address .footer_blog:hover{
     padding-top: 3%;
     padding-bottom: 1%;
   }
-  
-  /*-----------------------footer-------------------------*/
-
-  footer .footer_contact_address .footer_email{
-    font-size: var(--middle-size);
-    width: 30%;
-  }
-  footer .footer_contact_address .footer_email:hover{
-    height: 50%;
-  }
-
-  footer .footer_contact_address .footer_github{
-    font-size: var(--middle-size);
-    width: 30%;
-  }
-   footer .footer_contact_address .footer_github:hover{
-    height: 50%;
-  }
-
-  footer .footer_contact_address .footer_blog{
-    font-size: var(--middle-size);
-    width: 30%;
-  }
-   footer .footer_contact_address .footer_blog:hover{
-    height: 50%;
-  }
-  
-  
-  
   
 }
