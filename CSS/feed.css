@@ -351,5 +351,41 @@
   .feed .todolist_web .todolist_web_subtitle{
     display: none;
  }
+  /*---------------------------------paintbrush section------------------------------*/
+  .feed .painting_web{
+    width: 150px;
+    height: 150px;
+  }
+  
+  .feed .painting_web img{
+    width: 150px;
+    height: 150px;
+  }
 
+  .feed .painting_web img:hover{
+    background-color:var(--l-background-color);
+    transition: 3s;
+  }
+  .feed .painting_web:hover{
+    height: 180px;
+  }
+  .feed .painting_web .painting_web_title{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--middle-size);
+  }
+  .feed .painting_web .painting_web_title:hover{
+    width: 100%;
+    border-bottom: 0;
+  }
+  
+  .feed .painting_web .painting_web_title:hover img{
+    background-color: var(--l-background-color);
+  
+  }
+  .feed .painting_web .painting_web_subtitle{
+    display: none;
+ }
 }
