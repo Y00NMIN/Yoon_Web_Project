@@ -107,9 +107,9 @@ section{
 /*-------------profile_section----------------*/
 .profile{
   display:flex;
-  margin-top: 3%;
   border-bottom: 1px solid var(--grey-color);
   padding-bottom: 5%;
+  margin: 3% 10% 0 10%;
 }
 
 
@@ -121,7 +121,7 @@ section{
 
 .profile_title .profile_title_photo{
   display:flex;
-  padding-left: 100px;
+  margin: 3% 10% 0 40%;
 } 
 .profile_title .profile_title_photo img{
   width: 200px;
@@ -134,8 +134,8 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 5%;
-  margin-right: 3%; 
+  margin-left: 20%;
+  margin-right: 10%; 
   flex-wrap: wrap;
   flex-direction: column;
   list-style: none;
