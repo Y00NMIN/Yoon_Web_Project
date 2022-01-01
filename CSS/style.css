@@ -50,7 +50,6 @@ section{
 
 .navbar_logo{
   font-size: 30px;
-  color: var(--text-color);
 }
 
 .navbar_logo a:hover{
