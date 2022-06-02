@@ -1,6 +1,6 @@
 #  Yoonmin portfolio Web✨
 
-### Link : [Yoonmin Portfolio web](https://yoonminmainwebpage.y00nmin.repl.co/)    
+### Link : [Yoonmin Portfolio web](https://yoonminmainwebpage.yoonsmin.repl.co/)    
 
 ### 🏆GOAL  
 🥇완성된 프로젝트 Upload  
