@@ -19,11 +19,17 @@
 .feed{
   margin: 0 5% 10% 5%;
   display: flex;
+	flex-wrap: wrap;
 }
 
-
-/*------------------------------youtube section---------------------------*/
-.feed .youtube_web{
+/* feed */
+/* 새 박스 추가 */
+.feed .youtube_web, 
+.todolist_web, 
+.painting_web, 
+.movie_web,
+.todo_web,
+.come-as-u {
   width: 300px;
   height: 300px;
   position: relative;
@@ -31,24 +37,31 @@
   margin-right: 5%;
 }
 
-.feed .youtube_web .youtube_web_img{
-  background-color: var(--text-color);
-  z-index: -5;
+.feed .youtube_web:hover, 
+.todolist_web:hover, 
+.painting_web:hover, 
+.movie_web:hover, 
+.todo_web:hover, 
+.come-as-u:hover{
+  height: 340px;
+  transition : 2s;
+  background-color : var(--l-background-color); 
 }
 
-.feed .youtube_web .youtube_web_img:hover{
+/* 고정 */
+.feed .feed_img{
+  background-color: var(--text-color);
+  z-index: -5;
+	margin-bottom: 10px;
+}
+
+.feed .feed_img:hover{
   transition : 3s;
   background-color : var(--l-background-color); 
   opacity: 0.5;
 }
 
-.feed .youtube_web:hover{
-  height: 340px;
-  transition : 3s;
-  background-color : var(--l-background-color); 
-}
-
-.feed .youtube_web .youtube_web_title{
+.feed .feed_title{
   vertical-align: middle;
   opacity: 0;
   display: flex;
@@ -62,7 +75,7 @@
   font-weight: bold;
 }
 
-.feed .youtube_web .youtube_web_subtitle{
+.feed .feed_subtitle{
   opacity: 0;
   display: flex;
   align-items: center;
@@ -73,13 +86,7 @@
   font-size: var(--middle-size);
 }
 
-.feed .youtube_web:hover .youtube_web_title{
-  color : var(--text-color); 
-  transition : 1s;
-  opacity: 0.9;
-}
-
-.feed .youtube_web .youtube_web_title:hover {
+.feed .feed_title:hover {
   display: flex;
   justify-content: center;
   background-color: var(--l-background-color);
@@ -90,237 +97,136 @@
   opacity: 0.9;
 }
 
-.feed .youtube_web:hover .youtube_web_subtitle{
+.feed .feed_subtitle:hover {
+  display: flex;
+  justify-content: center;
+  background-color: var(--l-background-color);
+  width: 80%;
+  height: 30%;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+/*youtube*/
+.feed .youtube_web:hover .feed_title{
   color : var(--text-color); 
-  transition : 1s;
+  transition : 0.4s;
+  opacity: 0.95;
+}
+	
+.feed .youtube_web:hover .feed_subtitle {
+  color : var(--text-color); 
+  transition : 0.4s;
   opacity: 1;
 }
 
-.feed .youtube_web .youtube_web_subtitle:hover {
-  display: flex;
-  justify-content: center;
-  background-color: var(--l-background-color);
-  width: 80%;
-  height: 30%;
-  border-radius: 20px;
-  opacity: 0.9;
+/*todolist*/
+.feed .todolist_web:hover .feed_title{
+  color : var(--text-color); 
+  transition : 0.4s;
+  opacity: 0.95;
 }
 
-/*----------------------------------todolist section---------------------------------*/
-
-.feed .todolist_web{
-  width: 300px;
-  height: 300px;
-  position: relative;
-  border-radius: 4px;
-  margin-right: 5%;
+.feed .todolist_web:hover .feed_subtitle{
+  color : var(--text-color); 
+  transition : 0.4s;
+  opacity: 1;
+}
+	
+/*brushpaint*/
+.feed .painting_web:hover .feed_title{
+  color : var(--text-color); 
+  transition : 0.4s;
+  opacity: 0.95;
 }
 
-.feed .todolist_web .todolist_web_img{
-  background-color: var(--text-color);
-  z-index: -5;
-}
-
-.feed .todolist_web .todolist_web_img:hover{
-  transition : 3s;
-  background-color : var(--l-background-color); 
-  opacity: 0.5;
-}
-
-.feed .todolist_web:hover{
-  height: 340px;
-  transition : 3s;
-  background-color : var(--l-background-color); 
-}
-
-.feed .todolist_web .todolist_web_title{
-  vertical-align: middle;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  position: absolute;
-	top: 25%;
-	left: 50%;
-	transform: translate( -50%, -50% );
-  border-bottom: 1px solid var(--text-color);
-  font-size: var(--middle-size);
-  font-weight: bold;
-}
-
-.feed .todolist_web .todolist_web_subtitle{
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate( -50%, -50% );
-  font-size: var(--middle-size);
-}
-
-.feed .todolist_web:hover .todolist_web_title{
-  color : var(--text-color);
-  transition : 1s;
-  opacity: 0.9;
-}
-
-.feed .todolist_web .todolist_web_title:hover {
-  color: var(--text-color);
-  display: flex;
-  justify-content: center;
-  background-color: var(--l-background-color);
-  height: 20%;
-  width: 80%;
-  border-radius: 20px;
-  border-bottom: 1px solid var(--text-color);
-  opacity: 0.9;
-}
-
-.feed .todolist_web:hover .todolist_web_subtitle{
-  color : var(--text-color);
-  font-weight: bolder;
-  transition : 1s;
+.feed .painting_web:hover .feed_subtitle{
+  color : var(--text-color); 
+  transition : 0.4s;
   opacity: 1;
 }
 
-.feed .todolist_web .todolist_web_subtitle:hover {
-  color: var(--text-color);
-  display: flex;
-  justify-content: center;
-  background-color: var(--l-background-color);
-  width: 80%;
-  height: 30%;
-  border-radius: 20px;
-  opacity: 0.9;
-}
-/*-------------------------------------brushpaint section-----------------------------------------------*/
-
-.feed .painting_web{
-  width: 300px;
-  height: 300px;
-  position: relative;
-  border-radius: 4px;
-  margin-right: 5%;
+/*movie*/
+.feed .movie_web:hover .feed_title{
+  color : var(--text-color); 
+  transition : 0.4s;
+  opacity: 0.95;
 }
 
-.feed .painting_web .painting_web_img{
-  background-color: var(--text-color);
-  z-index: -5;
-}
-
-.feed .painting_web .painting_web_img:hover{
-  transition : 3s;
-  background-color : var(--l-background-color); 
-  opacity: 0.5;
-}
-
-.feed .painting_web:hover{
-  height: 340px;
-  transition : 3s;
-  background-color : var(--l-background-color); 
-}
-
-.feed .painting_web .painting_web_title{
-  vertical-align: middle;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  position: absolute;
-	top: 25%;
-	left: 50%;
-	transform: translate( -50%, -50% );
-  border-bottom: 1px solid var(--text-color);
-  font-size: var(--middle-size);
-  font-weight: bold;
-}
-
-.feed .painting_web .painting_web_subtitle{
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate( -50%, -50% );
-  font-size: var(--middle-size);
-}
-
-.feed .painting_web:hover .painting_web_title{
-  color : var(--text-color);
-  transition : 1s;
-  opacity: 0.9;
-}
-
-.feed .painting_web .painting_web_title:hover {
-  color: var(--text-color);
-  display: flex;
-  justify-content: center;
-  background-color: var(--l-background-color);
-  height: 20%;
-  width: 80%;
-  border-radius: 20px;
-  border-bottom: 1px solid var(--text-color);
-  opacity: 0.9;
-}
-
-.feed .painting_web:hover .painting_web_subtitle{
-  color : var(--text-color);
-  font-weight: bolder;
-  transition : 1s;
+.feed .movie_web:hover .feed_subtitle{
+  color : var(--text-color); 
+  transition : 0.4s;
   opacity: 1;
 }
-
-.feed .painting_web .painting_web_subtitle:hover {
-  color: var(--text-color);
-  display: flex;
-  justify-content: center;
-  background-color: var(--l-background-color);
-  width: 80%;
-  height: 30%;
-  border-radius: 20px;
-  opacity: 0.9;
+	
+/*todo*/
+.feed .todo_web:hover .feed_title{
+  color : var(--text-color); 
+  transition : 0.4s;
+  opacity: 0.95;
 }
+
+.feed .todo_web:hover .feed_subtitle{
+  color : var(--text-color); 
+  transition : 0.4s;
+  opacity: 1;
+}
+	
+/*come-as-u*/
+.feed .come-as-u:hover .feed_title{
+  color : var(--text-color); 
+  transition : 0.4s;
+  opacity: 0.95;
+}
+
+.feed .come-as-u:hover .feed_subtitle{
+  color : var(--text-color); 
+  transition : 0.4s;
+  opacity: 1;
+}
+	
 /*-----------------------------------------media section-----------------------------------*/
 @media screen and (max-width: 768px){
-
-  /*----------------------------------youtube section---------------------------------*/
-  .feed .youtube_web{
-    width: 150px;
-    height: 150px;
-  }
-  
-  .feed .youtube_web img{
+	/* 	feed */	
+  .feed .feed_img img{
     width: 150px;
     height: 150px;
   }
 
-  .feed .youtube_web img:hover{
+  .feed .feed_img img:hover{
     background-color:var(--l-background-color);
     transition: 3s;
   }
-  .feed .youtube_web:hover{
-    height: 180px;
-  }
-  .feed .youtube_web .youtube_web_title{
+  .feed .feed_title{
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: var(--middle-size); 
   }
-  .feed .youtube_web .youtube_web_title:hover{
+  .feed .feed_title:hover{
     width: 100%;
     border-bottom: 0;
   }
   
-  .feed .youtube_web .youtube_web_title:hover img{
+  .feed .feed_title:hover img{
     background-color: var(--l-background-color);
   }
-  .feed .youtube_web .youtube_web_subtitle{
+  .feed .feed_subtitle{
     display: none;
   }
+  
+	/*youtube*/
+  .feed .youtube_web, .todolist_web, .painting_web{
+    width: 150px;
+    height: 150px;
+  }
+  
+  .feed .youtube_web:hover , .todolist_web:hover, .painting_web:hover{
+    height: 180px;
+  }
 
-  /*----------------------------------todolist section---------------------------------*/
+  /*todolist*/
   .feed .todolist_web{
     width: 150px;
     height: 150px;
@@ -357,7 +263,7 @@
   .feed .todolist_web .todolist_web_subtitle{
     display: none;
  }
-  /*---------------------------------paintbrush section------------------------------*/
+  /*paintbrush*/
   .feed .painting_web{
     width: 150px;
     height: 150px;

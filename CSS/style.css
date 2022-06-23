@@ -16,6 +16,14 @@
   --so-big-size:37px;
 }
 
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+	font-family: Source Sans Pro;
+}
+
 html, body {
   height: 100%;
   width: 100%;
@@ -23,8 +31,6 @@ html, body {
 
 body{
   height: 100%;
-  margin: 0;
-  font-family: Source Sans Pro;
   background-color: var(--body--background-color);
 }
 
