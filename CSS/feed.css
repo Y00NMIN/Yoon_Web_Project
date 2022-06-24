@@ -187,7 +187,7 @@
 	
 /*-----------------------------------------media section-----------------------------------*/
 @media screen and (max-width: 768px){
-	/* 	feed */	
+	/* 	feed 고정 */	
   .feed .feed_img img{
     width: 150px;
     height: 150px;
@@ -215,8 +215,27 @@
   .feed .feed_subtitle{
     display: none;
   }
+
+	.feed .feed_title{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--middle-size);
+  }
+  .feed .feed_title:hover{
+    width: 100%;
+    border-bottom: 0;
+  }
   
-	/*youtube*/
+  .feed .feed_title:hover img{
+    background-color: var(--l-background-color);
+  
+  }
+  .feed .feed_subtitle{
+    display: none;
+ }
+	/* 	변경 */
   .feed .youtube_web, .todolist_web, .painting_web{
     width: 150px;
     height: 150px;
@@ -225,13 +244,18 @@
   .feed .youtube_web:hover , .todolist_web:hover, .painting_web:hover{
     height: 180px;
   }
-
-  /*todolist*/
-  .feed .todolist_web{
+	/*youtube*/
+	.feed .youtube_web img{
     width: 150px;
     height: 150px;
   }
-  
+
+  .feed .youtube_web img:hover{
+    background-color:var(--l-background-color);
+    transition: 3s;
+  }
+
+  /*todolist*/
   .feed .todolist_web img{
     width: 150px;
     height: 150px;
@@ -241,34 +265,8 @@
     background-color:var(--l-background-color);
     transition: 3s;
   }
-  .feed .todolist_web:hover{
-    height: 180px;
-  }
-  .feed .todolist_web .todolist_web_title{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--middle-size);
-  }
-  .feed .todolist_web .todolist_web_title:hover{
-    width: 100%;
-    border-bottom: 0;
-  }
-  
-  .feed .todolist_web .todolist_web_title:hover img{
-    background-color: var(--l-background-color);
-  
-  }
-  .feed .todolist_web .todolist_web_subtitle{
-    display: none;
- }
+	
   /*paintbrush*/
-  .feed .painting_web{
-    width: 150px;
-    height: 150px;
-  }
-  
   .feed .painting_web img{
     width: 150px;
     height: 150px;
@@ -278,26 +276,38 @@
     background-color:var(--l-background-color);
     transition: 3s;
   }
-  .feed .painting_web:hover{
-    height: 180px;
+	
+  /*movie*/
+  .feed .movie_web img{
+    width: 150px;
+    height: 150px;
   }
-  .feed .painting_web .painting_web_title{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--middle-size);
+
+  .feed .movie_web img:hover{
+    background-color:var(--l-background-color);
+    transition: 3s;
   }
-  .feed .painting_web .painting_web_title:hover{
-    width: 100%;
-    border-bottom: 0;
+  /*todo*/
+  .feed .todo_web img{
+    width: 150px;
+    height: 150px;
   }
-  
-  .feed .painting_web .painting_web_title:hover img{
-    background-color: var(--l-background-color);
-  
+
+  .feed .todo_web img:hover{
+    background-color:var(--l-background-color);
+    transition: 3s;
   }
-  .feed .painting_web .painting_web_subtitle{
-    display: none;
- }
+	
+  /*come-as-u*/
+  .feed .come-as-u img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .feed .come-as-u img:hover{
+    background-color:var(--l-background-color);
+    transition: 3s;
+  }
+	
+	
 }
